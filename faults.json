@@ -1,0 +1,1059 @@
+[
+  {
+    "code": "10083",
+    "title": "RESOLVER NOT OK (NOT CONNECTED?)",
+    "system": "Main machine resolver",
+    "manualPage": "Troubleshooting PDF p102",
+    "drawingRefs": [
+      "Cable #52 \u2014 Wiring PDF p146",
+      "Resolver properties \u2014 Wiring PDF p101",
+      "MCB \u2014 Wiring PDF pp67\u201371"
+    ],
+    "symptoms": [
+      "Machine resolver signal is not detected correctly."
+    ],
+    "causes": [
+      "Cable #52 loose or defective",
+      "Resolver fault",
+      "MCB-related fault"
+    ],
+    "steps": [
+      "Apply plant LOTO before opening electrical enclosures or disconnecting resolver wiring.",
+      "Inspect cable #52 and both connector ends for looseness, contamination, damaged pins or cable damage.",
+      "Check resolver and its wiring against the resolver information in the wiring manual.",
+      "If wiring and resolver are satisfactory, continue diagnosis at the MCB rather than replacing boards by trial."
+    ],
+    "keywords": "resolver cable 52 mcb position encoder"
+  },
+  {
+    "code": "10091",
+    "title": "CHECK RESOLVER CONNECTIONS",
+    "system": "Main machine resolver",
+    "manualPage": "Troubleshooting PDF p103",
+    "drawingRefs": [
+      "Cable #52 \u2014 Wiring PDF p146",
+      "Resolver properties \u2014 Wiring PDF p101",
+      "MCB \u2014 Wiring PDF pp67\u201371"
+    ],
+    "symptoms": [
+      "Machine cannot reliably detect resolver/signals."
+    ],
+    "causes": [
+      "Cable #52",
+      "Resolver",
+      "MCB"
+    ],
+    "steps": [
+      "Inspect cable #52 and connectors.",
+      "Check resolver wiring and resolver condition.",
+      "Check the MCB-side connection and diagnostics."
+    ],
+    "keywords": "resolver connection cable 52"
+  },
+  {
+    "code": "10125",
+    "title": "SPEED MONITORING: STARTING IS TAKING TOO LONG",
+    "system": "Main drive / SUMO",
+    "manualPage": "Troubleshooting PDF p107",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "Cable #52 \u2014 Wiring PDF p146",
+      "DDMP \u2014 Wiring PDF p72"
+    ],
+    "symptoms": [
+      "Machine does not reach expected speed during starting."
+    ],
+    "causes": [
+      "Resolver setting or resolver fault",
+      "Main motor overload",
+      "Cable #52",
+      "MCB/DDMP/drive electronics",
+      "Main motor"
+    ],
+    "steps": [
+      "Check for mechanical overload before electrical replacement.",
+      "Check resolver signal, setting and cable #52.",
+      "Review DDMP/main-drive diagnostics.",
+      "Check motor and drive only after wiring and mechanical load are excluded."
+    ],
+    "keywords": "starting too long speed sumo motor ddmp"
+  },
+  {
+    "code": "10147",
+    "title": "ACP: RESYNCHRONIZATION REQUIRED",
+    "system": "Machine position / pick finder",
+    "manualPage": "Troubleshooting PDF p108",
+    "drawingRefs": [
+      "PX-WP/PX-PP \u2014 Wiring PDF pp21\u201322",
+      "External components \u2014 Wiring PDF p98",
+      "Cables #174/#175 \u2014 Wiring PDF p149"
+    ],
+    "symptoms": [
+      "Pick-finder position is not in the required position."
+    ],
+    "causes": [
+      "PX-PP/PX-WP position or adjustment",
+      "Proximity sensor or wiring"
+    ],
+    "steps": [
+      "Use the prescribed PFF/PFR action from the machine message.",
+      "Check PX-PP/PX-WP sensing and mechanical target position.",
+      "Inspect cables #174/#175 and MCB inputs."
+    ],
+    "keywords": "acp resynchronization pff pfr pxpp pxwp pick finder"
+  },
+  {
+    "code": "10208",
+    "title": "EMERGENCY STOP PRESSED",
+    "system": "Safety / E-stop",
+    "manualPage": "Troubleshooting PDF p113",
+    "drawingRefs": [
+      "EPDAF \u2014 Wiring PDF pp39\u201341",
+      "Emergency stop \u2014 Wiring PDF pp126\u2013128",
+      "Button safety logic \u2014 Wiring PDF pp129\u2013130"
+    ],
+    "symptoms": [
+      "Safety chain reports emergency-stop condition."
+    ],
+    "causes": [
+      "Emergency stop operated",
+      "Open safety circuit",
+      "Wiring/contact problem"
+    ],
+    "steps": [
+      "Do not bypass the safety chain.",
+      "Identify and reset the operated E-stop only after the machine is safe.",
+      "If the message remains, inspect the E-stop circuit and second-contact safety logic using the referenced drawings."
+    ],
+    "keywords": "emergency stop estop safety epdaf"
+  },
+  {
+    "code": "10212",
+    "title": "DDMP BOARD NOT CONNECTED",
+    "system": "SUMO / DDMP",
+    "manualPage": "Troubleshooting PDF p114",
+    "drawingRefs": [
+      "DDMP \u2014 Wiring PDF p72",
+      "MCB \u2014 Wiring PDF pp67\u201371"
+    ],
+    "symptoms": [
+      "MCB does not detect the DDMP board."
+    ],
+    "causes": [
+      "DDMP missing/not seated",
+      "DDMP fault",
+      "MCB fault or interconnection"
+    ],
+    "steps": [
+      "Isolate power according to plant procedure.",
+      "Check DDMP seating and connections.",
+      "Inspect MCB\u2013DDMP interconnection.",
+      "Use board diagnostics before substituting DDMP or MCB."
+    ],
+    "keywords": "ddmp not connected board sumo"
+  },
+  {
+    "code": "10218",
+    "title": "SUMO: MAIN MOTOR CONTROL / SWITCHED OFF",
+    "system": "SUMO main drive",
+    "manualPage": "Troubleshooting PDF p114",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "DDMP \u2014 Wiring PDF p72"
+    ],
+    "symptoms": [
+      "Main motor control reports switched-off condition."
+    ],
+    "causes": [
+      "Protection/thermal condition",
+      "DDMP or powerbox/drive fault",
+      "Optical communication",
+      "Supply/safety condition"
+    ],
+    "steps": [
+      "Check for accompanying SUMO or supply messages.",
+      "Inspect DDMP and drive diagnostic LEDs.",
+      "Check optical communication and relevant supplies.",
+      "Do not replace drive electronics until motor and wiring checks are complete."
+    ],
+    "keywords": "sumo main motor switched off ldec powerbox"
+  },
+  {
+    "code": "10222",
+    "title": "IPS (PWR) POWER FAILS",
+    "system": "Power supply",
+    "manualPage": "Troubleshooting PDF p115",
+    "drawingRefs": [
+      "IPS \u2014 Wiring PDF pp37\u201339",
+      "EPDAF \u2014 Wiring PDF pp39\u201341",
+      "Power supply \u2014 Wiring PDF pp111\u2013125"
+    ],
+    "symptoms": [
+      "PWR supply status is low/not OK."
+    ],
+    "causes": [
+      "Overload or short circuit",
+      "IPS/EPDAF/MCB supply path"
+    ],
+    "steps": [
+      "Check for short circuit/overload before replacing a board.",
+      "Check IPS indications and supply outputs.",
+      "Trace the supply through EPDAF to the MCB using the power-supply drawings."
+    ],
+    "keywords": "ips pwr power supply fails"
+  },
+  {
+    "code": "10223",
+    "title": "IPS (DC-OK) NO VOLTAGE",
+    "system": "Power supply",
+    "manualPage": "Troubleshooting PDF p115",
+    "drawingRefs": [
+      "IPS \u2014 Wiring PDF pp37\u201339",
+      "Power supply \u2014 Wiring PDF pp111\u2013125"
+    ],
+    "symptoms": [
+      "DC-OK status is not present."
+    ],
+    "causes": [
+      "Mains transient",
+      "Overload/short circuit",
+      "IPS/EPDAF/wiring fault"
+    ],
+    "steps": [
+      "Check IPS DC-OK indication.",
+      "Check for supply short/overload.",
+      "Inspect the IPS\u2013EPDAF connection and supply outputs before board replacement."
+    ],
+    "keywords": "dc ok ips no voltage"
+  },
+  {
+    "code": "10225",
+    "title": "26VDC5 FAILS",
+    "system": "26 V control supply",
+    "manualPage": "Troubleshooting PDF p115",
+    "drawingRefs": [
+      "MCB \u2014 Wiring PDF pp67\u201371",
+      "+26 V distribution \u2014 Wiring PDF pp113\u2013120"
+    ],
+    "symptoms": [
+      "26VDC5 is below the expected monitoring threshold."
+    ],
+    "causes": [
+      "26 V input/output problem",
+      "Short circuit/load problem",
+      "IPS/EPDAF/MCB path"
+    ],
+    "steps": [
+      "Measure the control supply safely at the documented test points.",
+      "Check the +26 V distribution for a short or excessive load.",
+      "Trace IPS/EPDAF to MCB before replacing the MCB."
+    ],
+    "keywords": "26v 26vdc5 low voltage mcb"
+  },
+  {
+    "code": "10226",
+    "title": "26VDC FAILS / CHECK FUSES",
+    "system": "26 V control supply",
+    "manualPage": "Troubleshooting PDF pp115\u2013116",
+    "drawingRefs": [
+      "EPDAF \u2014 Wiring PDF pp39\u201341",
+      "+26 V distribution \u2014 Wiring PDF pp113\u2013120"
+    ],
+    "symptoms": [
+      "+26 V control supply is missing or protected circuit has opened."
+    ],
+    "causes": [
+      "Fuse open",
+      "Short circuit/load",
+      "Supply distribution fault"
+    ],
+    "steps": [
+      "Find and correct any short before replacing a fuse.",
+      "Check EPDAF fuse/LED indications.",
+      "Measure +26 V along the documented distribution path."
+    ],
+    "keywords": "26vdc fuse epdaf 26 volt"
+  },
+  {
+    "code": "10228",
+    "title": "CHECK 5V",
+    "system": "5 V control supply",
+    "manualPage": "Troubleshooting PDF p116",
+    "drawingRefs": [
+      "MCB \u2014 Wiring PDF pp67\u201371",
+      "+5 V \u2014 Wiring PDF p124"
+    ],
+    "symptoms": [
+      "5 V control supply is not correct."
+    ],
+    "causes": [
+      "Supply/wiring problem",
+      "MCB-side 5 V problem"
+    ],
+    "steps": [
+      "Check +5 V using the documented circuit and safe measurement practice.",
+      "Inspect related supply wiring and connectors.",
+      "Resolve upstream supply faults before suspecting the MCB."
+    ],
+    "keywords": "5v five volt mcb supply reset"
+  },
+  {
+    "code": "10401",
+    "title": "PREWINDER COMMUNICATION ERROR / INTERFERENCE",
+    "system": "Prewinder / PICAN",
+    "manualPage": "Troubleshooting PDF p120",
+    "drawingRefs": [
+      "PICAN \u2014 Wiring PDF pp87\u201397",
+      "PICAN diagrams \u2014 Wiring PDF pp133\u2013137"
+    ],
+    "symptoms": [
+      "Communication with a prewinder channel is disturbed."
+    ],
+    "causes": [
+      "PICAN wiring/termination",
+      "Prewinder connection/control",
+      "MCB communication"
+    ],
+    "steps": [
+      "Check PICAN connectors and cable condition.",
+      "Check bus termination; the wiring manual describes 120-ohm end termination.",
+      "Use the display PICAN device information to identify the affected channel/device."
+    ],
+    "keywords": "prewinder pican communication interference can bus"
+  },
+  {
+    "code": "10516",
+    "title": "ETU: TEMPERATURE MOTOR TOO HIGH",
+    "system": "Electronic take-up / ETU",
+    "manualPage": "Troubleshooting PDF p122",
+    "drawingRefs": [
+      "Take-up/ETU \u2014 Wiring PDF p25",
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "ETU cables #191\u2013193 \u2014 Wiring PDF p150"
+    ],
+    "symptoms": [
+      "ETU motor thermal contact indicates excessive temperature."
+    ],
+    "causes": [
+      "Excessive load/pick-density demand",
+      "TRIAX/drive issue",
+      "Motor or mechanical transmission problem"
+    ],
+    "steps": [
+      "Allow the motor to cool and determine why it overheated before restarting.",
+      "Check take-up mechanism for abnormal load.",
+      "Check motor, resolver/brake wiring and TRIAX diagnostics.",
+      "Review operating demand/pick density if the mechanical system is normal."
+    ],
+    "keywords": "etu temperature hot take up triax motor"
+  },
+  {
+    "code": "10517",
+    "title": "CHECK THE ETU",
+    "system": "Electronic take-up / ETU",
+    "manualPage": "Troubleshooting PDF p122",
+    "drawingRefs": [
+      "Take-up/ETU \u2014 Wiring PDF p25",
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "ETU cables #191\u2013193 \u2014 Wiring PDF p150"
+    ],
+    "symptoms": [
+      "ETU drive or motor error."
+    ],
+    "causes": [
+      "ETU drive/motor/wiring",
+      "Mechanical take-up problem"
+    ],
+    "steps": [
+      "Check for accompanying TRIAX/ETU message.",
+      "Inspect ETU mechanical load.",
+      "Check motor, resolver and brake connections.",
+      "Use TRIAX diagnostics before replacing components."
+    ],
+    "keywords": "check etu takeup triax"
+  },
+  {
+    "code": "10522",
+    "title": "CHECK TSW WARP TENSION SENSOR (TSF)",
+    "system": "Warp tension / ELO",
+    "manualPage": "Troubleshooting PDF p123",
+    "drawingRefs": [
+      "Warp tension \u2014 Wiring PDF p24",
+      "MCB \u2014 Wiring PDF pp67\u201371",
+      "+26 V \u2014 Wiring PDF pp113\u2013120",
+      "DTWT/backrest wiring \u2014 Wiring PDF pp144\u2013145"
+    ],
+    "symptoms": [
+      "Warp-tension sensor test fails or tension is detected too low for an ELO action."
+    ],
+    "causes": [
+      "Sensor not connected/installed correctly",
+      "Sensor obstructed or zero incorrect",
+      "Sensor/wiring fault",
+      "MCB input"
+    ],
+    "steps": [
+      "Check sensor mounting and freedom of movement.",
+      "Check sensor connection and wiring.",
+      "Verify zero adjustment with the warp in the required condition.",
+      "Check the MCB input only after sensor/mechanical checks."
+    ],
+    "keywords": "tsw tsf warp tension sensor elo"
+  },
+  {
+    "code": "10523",
+    "title": "TSF SENSOR 1: ZERO ADJUSTMENT NOT POSSIBLE",
+    "system": "Warp tension / ELO",
+    "manualPage": "Troubleshooting PDF p123",
+    "drawingRefs": [
+      "Warp tension \u2014 Wiring PDF p24",
+      "DTWT/backrest wiring \u2014 Wiring PDF pp144\u2013145"
+    ],
+    "symptoms": [
+      "Zero adjustment of warp-tension sensor cannot be completed."
+    ],
+    "causes": [
+      "Warp not released as required",
+      "Sensor disconnected",
+      "Mechanical/zero problem",
+      "Sensor/wiring/MCB"
+    ],
+    "steps": [
+      "Put the machine/warp in the manual-prescribed condition for zeroing.",
+      "Check sensor mechanical freedom and connection.",
+      "Repeat zero adjustment.",
+      "If unsuccessful, trace sensor wiring to MCB."
+    ],
+    "keywords": "tsf zero adjustment warp sensor"
+  },
+  {
+    "code": "10527",
+    "title": "WARP TENSION TOO HIGH",
+    "system": "Warp tension / ELO",
+    "manualPage": "Troubleshooting PDF p124",
+    "drawingRefs": [
+      "Warp tension \u2014 Wiring PDF p24",
+      "Let-off \u2014 Wiring PDF pp23\u201324",
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "Measured warp tension exceeds the upper limit."
+    ],
+    "causes": [
+      "Actual excessive tension",
+      "Sensor error",
+      "Let-off gearing/mechanics",
+      "TRIAX/motor/MCB"
+    ],
+    "steps": [
+      "First determine whether the tension is physically high or the sensor reading is wrong.",
+      "Check sensor and zero/reference condition.",
+      "Inspect let-off mechanics/gearing for restriction.",
+      "Check ELO motor/TRIAX only after mechanical and sensor checks."
+    ],
+    "keywords": "warp tension too high elo"
+  },
+  {
+    "code": "10528",
+    "title": "WARP TENSION UNATTAINABLE",
+    "system": "Warp tension / ELO",
+    "manualPage": "Troubleshooting PDF p124",
+    "drawingRefs": [
+      "Let-off \u2014 Wiring PDF pp23\u201324",
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "Nominal warp tension cannot be reached."
+    ],
+    "causes": [
+      "Beam/let-off mechanical problem",
+      "Incorrect gearing",
+      "TRIAX/motor/cabling",
+      "MCB/control"
+    ],
+    "steps": [
+      "Inspect beam and let-off mechanism for abnormal movement or restriction.",
+      "Check gearing/setup.",
+      "Check ELO motor, resolver/brake wiring and TRIAX diagnostics.",
+      "Escalate to control/MCB only after mechanical and drive checks."
+    ],
+    "keywords": "warp tension unattainable elo let off"
+  },
+  {
+    "code": "10535",
+    "title": "CHECK ELO",
+    "system": "Electronic let-off / ELO",
+    "manualPage": "Troubleshooting PDF p124",
+    "drawingRefs": [
+      "Let-off \u2014 Wiring PDF pp23\u201324",
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "TRIAX control box \u2014 Wiring PDF pp82\u201386",
+      "ELO cables #188\u2013190 \u2014 Wiring PDF pp149\u2013150"
+    ],
+    "symptoms": [
+      "ELO drive/motor error."
+    ],
+    "causes": [
+      "ELO motor/drive/wiring",
+      "Resolver/brake",
+      "Mechanical let-off load"
+    ],
+    "steps": [
+      "Check for accompanying TRIAX message.",
+      "Inspect let-off mechanical load.",
+      "Check ELO motor, resolver and brake cables.",
+      "Use TRIAX diagnostics before component replacement."
+    ],
+    "keywords": "check elo electronic let off triax"
+  },
+  {
+    "code": "10656",
+    "title": "DOBBY: COMMUNICATION FAILS",
+    "system": "Dobby / PICAN",
+    "manualPage": "Troubleshooting PDF p131",
+    "drawingRefs": [
+      "PICAN \u2014 Wiring PDF pp87\u201397",
+      "PICAN diagrams \u2014 Wiring PDF pp133\u2013137"
+    ],
+    "symptoms": [
+      "CAN/PICAN communication with dobby fails."
+    ],
+    "causes": [
+      "CAN wiring or termination",
+      "Interface/controller",
+      "MCB"
+    ],
+    "steps": [
+      "Inspect PICAN/CAN cable and connectors.",
+      "Verify end termination according to the wiring manual.",
+      "Check interface/controller status and configuration.",
+      "Check MCB communication only after bus wiring is verified."
+    ],
+    "keywords": "dobby communication can pican 120 ohm"
+  },
+  {
+    "code": "10681",
+    "title": "JACQUARD: COMMUNICATION ERROR",
+    "system": "Jacquard / PICAN",
+    "manualPage": "Troubleshooting PDF pp133\u2013134",
+    "drawingRefs": [
+      "PICAN \u2014 Wiring PDF pp87\u201397",
+      "PICAN diagrams \u2014 Wiring PDF pp133\u2013137"
+    ],
+    "symptoms": [
+      "Communication with Jacquard controller/interface fails."
+    ],
+    "causes": [
+      "Wiring/termination",
+      "Configuration/type",
+      "Interface/controller",
+      "MCB"
+    ],
+    "steps": [
+      "Check PICAN/CAN wiring and connectors.",
+      "Verify termination for the Jacquard configuration.",
+      "Check configured type/production data and controller/interface status.",
+      "Check MCB communication after bus-side checks."
+    ],
+    "keywords": "jacquard communication pican can"
+  },
+  {
+    "code": "10755",
+    "title": "UNDERVOLTAGE",
+    "system": "TRIAX drive",
+    "manualPage": "Troubleshooting PDF pp138\u2013139",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "290 V supply \u2014 Wiring PDF p121"
+    ],
+    "symptoms": [
+      "TRIAX detects low DC-bus voltage."
+    ],
+    "causes": [
+      "290 VDC supply/fuse",
+      "IPS/EPDAF supply path",
+      "Wiring",
+      "TRIAX"
+    ],
+    "steps": [
+      "Use qualified electrical personnel for DC-bus measurements.",
+      "Check the 290 VDC supply and documented protection path.",
+      "Inspect wiring/connectors to TRIAX.",
+      "Only suspect TRIAX after supply integrity is proven."
+    ],
+    "keywords": "triax undervoltage 290v"
+  },
+  {
+    "code": "10761",
+    "title": "MOTOR OVERHEATED",
+    "system": "TRIAX motor drive",
+    "manualPage": "Troubleshooting PDF p139",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "Motor thermal contact indicates overtemperature."
+    ],
+    "causes": [
+      "Motor overloaded/hot",
+      "Thermal-contact wiring",
+      "TRIAX input",
+      "Mechanical load"
+    ],
+    "steps": [
+      "Allow motor to cool and find the overload cause.",
+      "Inspect mechanical load.",
+      "Check thermal-contact and motor wiring.",
+      "Check TRIAX diagnostics."
+    ],
+    "keywords": "motor overheated triax thermal"
+  },
+  {
+    "code": "10762",
+    "title": "MOTOR CURRENT FAILURE",
+    "system": "TRIAX motor drive",
+    "manualPage": "Troubleshooting PDF p139",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "290 V supply \u2014 Wiring PDF p121"
+    ],
+    "symptoms": [
+      "Drive detects a motor phase/current problem."
+    ],
+    "causes": [
+      "Missing motor phase",
+      "Motor wiring",
+      "Motor",
+      "TRIAX"
+    ],
+    "steps": [
+      "Isolate power before resistance/continuity checks.",
+      "Check motor phase wiring and connections.",
+      "Check motor winding condition.",
+      "Do not replace TRIAX before motor and cable faults are excluded."
+    ],
+    "keywords": "motor current phase triax"
+  },
+  {
+    "code": "10763",
+    "title": "BRAKE CURRENT NOT OK",
+    "system": "TRIAX motor drive",
+    "manualPage": "Troubleshooting PDF p139",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "Expected brake current is not detected."
+    ],
+    "causes": [
+      "Brake wiring",
+      "Brake coil",
+      "TRIAX output"
+    ],
+    "steps": [
+      "Check brake connector and cable.",
+      "Check brake coil according to the applicable motor circuit.",
+      "Check TRIAX output/diagnostics after the brake circuit is verified."
+    ],
+    "keywords": "brake current triax"
+  },
+  {
+    "code": "10764",
+    "title": "MOTOR OVERLOAD",
+    "system": "TRIAX motor drive",
+    "manualPage": "Troubleshooting PDF p139",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "TRIAX detects excessive motor load."
+    ],
+    "causes": [
+      "Mechanical overload",
+      "Resolver/motor wiring",
+      "Motor",
+      "TRIAX"
+    ],
+    "steps": [
+      "Check mechanical load first.",
+      "Inspect motor and resolver wiring.",
+      "Check motor condition.",
+      "Use TRIAX diagnostics before board replacement."
+    ],
+    "keywords": "motor overload triax resolver"
+  },
+  {
+    "code": "10767",
+    "title": "POSITION CONTROL ERROR",
+    "system": "TRIAX position control",
+    "manualPage": "Troubleshooting PDF p140",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343"
+    ],
+    "symptoms": [
+      "Motor position deviation exceeds the permitted value."
+    ],
+    "causes": [
+      "Motor/resolver wiring",
+      "Resolver/motor",
+      "TRIAX",
+      "Safety interruption"
+    ],
+    "steps": [
+      "Check for E-stop/safety interruption.",
+      "Inspect motor and resolver wiring.",
+      "Check resolver/mechanical coupling.",
+      "Use TRIAX diagnostics to distinguish drive from motor/resolver fault."
+    ],
+    "keywords": "position control error triax resolver"
+  },
+  {
+    "code": "10768",
+    "title": "RESOLVER NOT OK",
+    "system": "TRIAX motor resolver",
+    "manualPage": "Troubleshooting PDF p140",
+    "drawingRefs": [
+      "TRIAX \u2014 Wiring PDF pp41\u201343",
+      "Resolver properties \u2014 Wiring PDF p101"
+    ],
+    "symptoms": [
+      "TRIAX does not receive a valid motor resolver signal."
+    ],
+    "causes": [
+      "Resolver wiring",
+      "Resolver",
+      "TRIAX"
+    ],
+    "steps": [
+      "Inspect resolver cable/connectors.",
+      "Check resolver according to the wiring manual.",
+      "Check TRIAX connection/diagnostics only after resolver circuit checks."
+    ],
+    "keywords": "triax resolver not ok"
+  },
+  {
+    "code": "10812",
+    "title": "MCB MACHINE STOP PROTECTION \u2014 CHECK DTKMM",
+    "system": "Main motor / KMM",
+    "manualPage": "Troubleshooting PDF p145",
+    "drawingRefs": [
+      "HV/main motor \u2014 Wiring PDF pp31 onward",
+      "Mains diagrams \u2014 Wiring PDF pp104\u2013105",
+      "Cable #67A/B \u2014 Wiring PDF p147"
+    ],
+    "symptoms": [
+      "MCB machine-stop protection detects unexpected KMM switching/status."
+    ],
+    "causes": [
+      "KMM/contact circuit",
+      "HV wiring",
+      "MCB detection"
+    ],
+    "steps": [
+      "Keep the machine isolated while inspecting contactor circuitry.",
+      "Check KMM and associated wiring/status signal.",
+      "Trace the HV/control path using the referenced mains drawings.",
+      "Check MCB detection after contactor/wiring checks."
+    ],
+    "keywords": "dtkmm kmm machine stop protection mcb"
+  },
+  {
+    "code": "10813",
+    "title": "DANGER! UNEXPECTED MOVEMENT \u2014 CHECK MACHINE BRAKE",
+    "system": "Machine safety / brake",
+    "manualPage": "Troubleshooting PDF p145",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "Resolver \u2014 Wiring PDF p101"
+    ],
+    "symptoms": [
+      "Control detects a condition associated with unexpected movement."
+    ],
+    "causes": [
+      "Brake",
+      "Resolver/cable",
+      "MCB/detection"
+    ],
+    "steps": [
+      "Treat this as a safety-critical fault; do not operate the machine until resolved.",
+      "Inspect machine brake mechanically and electrically.",
+      "Check resolver/cable feedback.",
+      "Verify the safety/detection circuit before returning the machine to service."
+    ],
+    "keywords": "unexpected movement machine brake danger"
+  },
+  {
+    "code": "10817",
+    "title": "SUMO SWITCHED OFF",
+    "system": "SUMO main drive",
+    "manualPage": "Troubleshooting PDF p145",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "DDMP \u2014 Wiring PDF p72"
+    ],
+    "symptoms": [
+      "SUMO/powerbox reports switched-off state."
+    ],
+    "causes": [
+      "Powerbox/drive error",
+      "Drive-disable/safety path",
+      "DDMP/PDAF interconnection"
+    ],
+    "steps": [
+      "Check for accompanying drive-disable, supply or powerbox messages.",
+      "Inspect DDMP and drive diagnostics.",
+      "Check relevant safety/drive-enable wiring.",
+      "Resolve motor/wiring faults before replacing power electronics."
+    ],
+    "keywords": "sumo switched off powerbox ddmp"
+  },
+  {
+    "code": "10819",
+    "title": "SUMO COMMUNICATION TIMEOUT",
+    "system": "SUMO communication",
+    "manualPage": "Troubleshooting PDF p146",
+    "drawingRefs": [
+      "DDMP \u2014 Wiring PDF p72",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352"
+    ],
+    "symptoms": [
+      "Communication between MCB/DDMP and main-motor drive times out."
+    ],
+    "causes": [
+      "Optical communication cable",
+      "DDMP",
+      "Main drive/powerbox",
+      "MCB"
+    ],
+    "steps": [
+      "Check optical cable seating/condition and avoid tight bends.",
+      "Check DDMP and drive diagnostic indications.",
+      "Verify power to the involved modules.",
+      "Substitute boards only after communication and supply checks."
+    ],
+    "keywords": "sumo communication timeout optical ddmp ldec"
+  },
+  {
+    "code": "10821",
+    "title": "SUMO: CHECK PXWP / PXPP",
+    "system": "SUMO position sensing",
+    "manualPage": "Troubleshooting PDF p146",
+    "drawingRefs": [
+      "PX-WP/PX-PP \u2014 Wiring PDF pp21\u201322",
+      "Cables #174/#175 \u2014 Wiring PDF p149",
+      "MCB \u2014 Wiring PDF pp67\u201371"
+    ],
+    "symptoms": [
+      "PX-WP/PX-PP signals are conflicting or unexpected."
+    ],
+    "causes": [
+      "Sensor adjustment",
+      "Sensor/target",
+      "Cables #174/#175",
+      "MCB input"
+    ],
+    "steps": [
+      "Check sensor targets and physical adjustment.",
+      "Inspect cables #174/#175 and connectors.",
+      "Check MCB input indication for both sensors.",
+      "Correct sensing before attempting drive resynchronization."
+    ],
+    "keywords": "pxwp pxpp sumo proximity sensor"
+  },
+  {
+    "code": "10822",
+    "title": "SUMO RESYNCHRONIZATION FAILED \u2014 PHASE(S) FAILED",
+    "system": "SUMO main motor",
+    "manualPage": "Troubleshooting PDF p146",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352"
+    ],
+    "symptoms": [
+      "Main-drive resynchronization detects failed motor phase(s)."
+    ],
+    "causes": [
+      "Motor phase/winding",
+      "Motor cable/insulation",
+      "Powerbox/drive output"
+    ],
+    "steps": [
+      "Isolate the machine before motor resistance/insulation tests.",
+      "Check phase connections, phase resistance and insulation to earth according to the manual.",
+      "Use the drive/manual diagnostic procedure to distinguish motor from drive fault.",
+      "Do not fit a replacement power board to a suspect motor circuit."
+    ],
+    "keywords": "sumo resynchronization phase failed motor"
+  },
+  {
+    "code": "10829",
+    "title": "SUMO / MAIN MOTOR CONTROL LOW VOLTAGE TOO LOW",
+    "system": "SUMO power supply",
+    "manualPage": "Troubleshooting PDF p149",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352"
+    ],
+    "symptoms": [
+      "Main motor control reports insufficient low/control voltage."
+    ],
+    "causes": [
+      "Main/control supply",
+      "KMM/inrush circuit",
+      "Drive supply path"
+    ],
+    "steps": [
+      "Check incoming/control supply and contactor state.",
+      "Inspect inrush/supply circuit and drive indications.",
+      "Correct supply fault before drive-board replacement."
+    ],
+    "keywords": "sumo low voltage too low kmm inrush"
+  },
+  {
+    "code": "10831",
+    "title": "SUMO MAIN MOTOR CONTROL \u2014 NO COMMUNICATION",
+    "system": "SUMO communication",
+    "manualPage": "Troubleshooting PDF p149",
+    "drawingRefs": [
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "DDMP \u2014 Wiring PDF p72"
+    ],
+    "symptoms": [
+      "No communication with main motor control."
+    ],
+    "causes": [
+      "Optical cable",
+      "DDMP",
+      "Powerbox/LDEC",
+      "Drive supply/fuse"
+    ],
+    "steps": [
+      "Verify the drive has its required power and no upstream protection has opened.",
+      "Inspect optical communication cable and connectors.",
+      "Check DDMP and drive LEDs/diagnostics.",
+      "Only then consider module substitution."
+    ],
+    "keywords": "sumo no communication ldec ddmp optical"
+  },
+  {
+    "code": "10832",
+    "title": "SUMO MAIN MOTOR CONTROL \u2014 COMMUNICATION FAILS",
+    "system": "SUMO communication",
+    "manualPage": "Troubleshooting PDF p150",
+    "drawingRefs": [
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "DDMP \u2014 Wiring PDF p72"
+    ],
+    "symptoms": [
+      "Communication between DDMP and main motor control fails."
+    ],
+    "causes": [
+      "Optical communication",
+      "DDMP",
+      "Powerbox/LDEC",
+      "Power supply/inrush"
+    ],
+    "steps": [
+      "Check drive power and protection status.",
+      "Inspect optical cable and connections.",
+      "Check DDMP and LDEC/powerbox diagnostic indications.",
+      "Check supply/inrush path before board replacement."
+    ],
+    "keywords": "sumo communication fails optical ddmp ldec"
+  },
+  {
+    "code": "10833",
+    "title": "SUMO MAIN MOTOR CONTROL \u2014 UNDERVOLTAGE",
+    "system": "SUMO powerbox",
+    "manualPage": "Troubleshooting PDF p150",
+    "drawingRefs": [
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "Mains diagrams \u2014 Wiring PDF pp104\u2013105"
+    ],
+    "symptoms": [
+      "Main motor powerbox DC link is below its permitted level."
+    ],
+    "causes": [
+      "Incoming mains/contactors/fuses",
+      "Powerbox supply/rectifier path"
+    ],
+    "steps": [
+      "Qualified personnel only: check incoming three-phase supply and documented protection/contactor path.",
+      "Check powerbox status indicators.",
+      "Do not work on the DC link until discharge and LOTO requirements are satisfied."
+    ],
+    "keywords": "sumo powerbox undervoltage dc link"
+  },
+  {
+    "code": "10834",
+    "title": "SUMO POWERBOX OVERVOLTAGE",
+    "system": "SUMO powerbox",
+    "manualPage": "Troubleshooting PDF p150",
+    "drawingRefs": [
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352"
+    ],
+    "symptoms": [
+      "Powerbox detects excessive DC-link voltage."
+    ],
+    "causes": [
+      "High incoming mains",
+      "Powerbox/braking/resistor circuit"
+    ],
+    "steps": [
+      "Check incoming mains voltage against the machine supply specification.",
+      "Inspect the documented powerbox/resistor circuit and diagnostic indications.",
+      "Do not replace power electronics until supply conditions are verified."
+    ],
+    "keywords": "sumo powerbox overvoltage dc"
+  },
+  {
+    "code": "10835",
+    "title": "SUMO POWERBOX VLSOK VOLTAGE FAILURE",
+    "system": "SUMO powerbox",
+    "manualPage": "Troubleshooting PDF p150",
+    "drawingRefs": [
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352",
+      "EPDAF \u2014 Wiring PDF pp39\u201341"
+    ],
+    "symptoms": [
+      "Powerbox control-voltage/status signal is missing."
+    ],
+    "causes": [
+      "Control-voltage wiring",
+      "PDAF/EPDAF path",
+      "Powerbox"
+    ],
+    "steps": [
+      "Check the documented control-voltage/status wiring.",
+      "Inspect PDAF/EPDAF and powerbox connections.",
+      "Check module diagnostics before replacement."
+    ],
+    "keywords": "vlsok sumo voltage failure powerbox"
+  },
+  {
+    "code": "10836",
+    "title": "SUMO MAIN MOTOR CONTROL SWITCHED OFF (DTSC)",
+    "system": "SUMO main drive",
+    "manualPage": "Troubleshooting PDF p150",
+    "drawingRefs": [
+      "Main drive/control \u2014 Wiring PDF pp18\u201320",
+      "NG_LDEC \u2014 Wiring PDF pp44\u201352"
+    ],
+    "symptoms": [
+      "Main motor control reports DTSC switched-off condition."
+    ],
+    "causes": [
+      "Main-drive protection/status",
+      "Motor phases",
+      "Powerbox/LDEC"
+    ],
+    "steps": [
+      "Check accompanying SUMO messages and drive diagnostics.",
+      "Check motor phase circuit before replacing drive electronics.",
+      "Follow the manual SUMO test/diagnostic path for the installed drive version."
+    ],
+    "keywords": "dtsc sumo switched off main motor"
+  }
+]

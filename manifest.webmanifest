@@ -1,0 +1,8 @@
+{
+  "name": "OptiMax-i Troubleshooter",
+  "short_name": "OptiMax-i",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f9",
+  "theme_color": "#073b66"
+}
